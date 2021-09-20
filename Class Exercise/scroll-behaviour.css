@@ -1,0 +1,46 @@
+* {margin: 0; padding: 0; box-sizing: border-box;}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    font-family: sans-serif;
+    scroll-behavior: smooth;
+}
+
+#container {
+    /* width: 100%; */
+    width: 300%; /*for horizontal scrolling*/
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    height: 60px;
+    background-color: skyblue;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header ul { list-style-type: none; }
+header ul li { display: inline-block; margin: 20px;}
+
+.section {
+    /* width: 100%; */
+    /* width: calc(100%/3); for horizontal scrolling */
+    width: 100vw; /*adjusts to 100% of view-width/browser-view*/
+    height: 100%;
+    font-size: 80px;
+    padding-top: 60px; /*height of the header*/
+    float: left; /*for horizontal scrolling*/
+}
+
+.home-section { background-color: pink;}
+.about-section { background-color: yellow;}
+.contact-section { background-color: salmon;}
+
+/* for vertical scrolling 
+just need to change: 
+
+container {width:100%}
+(remove) float:left*/
